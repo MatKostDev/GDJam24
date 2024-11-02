@@ -38,24 +38,24 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Vector1_1c76e3bb94604ef5a6c7527b063f5860: 1
-    - Vector1_31afe60a10de47358768ce586d968827: 13.74
-    - Vector1_40ab5152a89d48628bfa7ccbb7dcab07: 0.02
+    - Vector1_1c76e3bb94604ef5a6c7527b063f5860: 15.77
+    - Vector1_31afe60a10de47358768ce586d968827: 12.27
+    - Vector1_40ab5152a89d48628bfa7ccbb7dcab07: 0.03
     - Vector1_5c5294d8314a42bfba8263c35e97bd2e: -0.01
-    - Vector1_5f98b915d0034228835cf111fac8ac02: 1
+    - Vector1_5f98b915d0034228835cf111fac8ac02: 10
     - Vector1_676d2c3dfc1b45ffba584a4bb7e68748: 0.5
-    - Vector1_9909d99971014a909aef3743d8728edb: 10
+    - Vector1_9909d99971014a909aef3743d8728edb: 0.46
     - Vector1_fe027c7a196747769e2e9466430236dd: 9.72
-    - _NormalStrength: 8
+    - _NormalStrength: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RefractionScale: 9
+    - _RefractionScale: 7.25
     - _RefractionSpeed: -0.2
-    - _WaterDepth: 3.64
+    - _WaterDepth: 4.85
     m_Colors:
     - Color_0fc4ae942b304ffe995328ff918cbc95: {r: 1, g: 1, b: 1, a: 1}
-    - _DeepColor: {r: 0.37264147, g: 0.87757105, b: 1, a: 1}
-    - _ShallowColor: {r: 0.2783019, g: 0.9893866, b: 1, a: 0}
+    - _DeepColor: {r: 0.37254906, g: 0.8202178, b: 1, a: 1}
+    - _ShallowColor: {r: 0.1745283, g: 0.83942413, b: 1, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &7327840671627104536
