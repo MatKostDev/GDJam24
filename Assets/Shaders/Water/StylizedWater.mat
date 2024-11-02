@@ -44,12 +44,12 @@ Material:
     - Vector1_5c5294d8314a42bfba8263c35e97bd2e: -0.01
     - Vector1_5f98b915d0034228835cf111fac8ac02: 10
     - Vector1_676d2c3dfc1b45ffba584a4bb7e68748: 0.5
-    - Vector1_9909d99971014a909aef3743d8728edb: 20
+    - Vector1_9909d99971014a909aef3743d8728edb: 200
     - Vector1_fe027c7a196747769e2e9466430236dd: 9.72
     - _NormalStrength: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RefractionScale: 40
+    - _RefractionScale: 400
     - _RefractionSpeed: -0.1
     - _WaterDepth: 4.85
     m_Colors:
