@@ -44,18 +44,18 @@ Material:
     - Vector1_5c5294d8314a42bfba8263c35e97bd2e: -0.01
     - Vector1_5f98b915d0034228835cf111fac8ac02: 10
     - Vector1_676d2c3dfc1b45ffba584a4bb7e68748: 0.5
-    - Vector1_9909d99971014a909aef3743d8728edb: 0.46
+    - Vector1_9909d99971014a909aef3743d8728edb: 20
     - Vector1_fe027c7a196747769e2e9466430236dd: 9.72
     - _NormalStrength: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RefractionScale: 7.25
-    - _RefractionSpeed: -0.2
+    - _RefractionScale: 40
+    - _RefractionSpeed: -0.1
     - _WaterDepth: 4.85
     m_Colors:
     - Color_0fc4ae942b304ffe995328ff918cbc95: {r: 1, g: 1, b: 1, a: 1}
-    - _DeepColor: {r: 0.37254906, g: 0.8202178, b: 1, a: 1}
-    - _ShallowColor: {r: 0.1745283, g: 0.83942413, b: 1, a: 0}
+    - _DeepColor: {r: 0.37254906, g: 1, b: 0.7989589, a: 1}
+    - _ShallowColor: {r: 0.17647058, g: 1, b: 0.6727171, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &7327840671627104536
