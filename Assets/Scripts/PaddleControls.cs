@@ -30,6 +30,10 @@ public class PaddleControls : MonoBehaviour
     [SerializeField]
     PaddleCollision paddleCollision;
 
+    [Header("Effects")]
+    [SerializeField]
+    GameObject paddleCollisionParticle;
+
     float m_paddleStaticHeightOffset;
 
     Vector2 m_lastRelativeScreenPos;
@@ -77,6 +81,8 @@ public class PaddleControls : MonoBehaviour
                 Vector3 forwardForce = paddleForwardForceMulti * paddleSpeed * canoeTransform.forward;
 
                 canoeTransform.GetComponent<Rigidbody>().AddForceAtPosition(forwardForce, paddleContactTransform.position);
+
+                GameObject.Instantiate(paddleCollisionParticle, paddleContactTransform.position, Quaternion.identity);
             }
             if (clickFrame)
             {
