@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PaddleControls : MonoBehaviour
 {
@@ -37,6 +38,11 @@ public class PaddleControls : MonoBehaviour
     [Header("Effects")]
     [SerializeField]
     GameObject paddleCollisionParticle;
+
+    [Header("Audio")]
+    [SerializeField]
+    UnityEvent paddleSwitchSide;
+    int m_lastSideMulti = -1;
 
     float m_paddleStaticHeightOffset;
 
@@ -80,6 +86,12 @@ public class PaddleControls : MonoBehaviour
         Vector3 newPhysicsPos = transform.position;
         newPhysicsPos.x = paddleDynamicSideOffset * sideMulti;
         transform.position = newPhysicsPos;
+
+        if (m_lastSideMulti != sideMulti)
+        {
+            paddleSwitchSide?.Invoke();
+            m_lastSideMulti = sideMulti;
+        }
 
         newPhysicsPos = canoePos;
         newPhysicsPos += canoeTransform.right   * (relativeScreenPos.x * 0.2f + (paddleDynamicSideOffset * sideMulti));
