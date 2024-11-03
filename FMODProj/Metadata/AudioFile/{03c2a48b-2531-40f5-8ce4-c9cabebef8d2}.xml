@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{03c2a48b-2531-40f5-8ce4-c9cabebef8d2}">
+		<property name="assetPath">
+			<value>PADDLE/SWITCHSIDES/GDJF24_JAMP_paddle_switchsides_4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.25520833333333331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{13f6abb4-f63e-4794-b3f0-6a1e2e1bbb32}</destination>
+		</relationship>
+	</object>
+</objects>

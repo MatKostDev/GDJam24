@@ -1,0 +1,429 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7193050363611869085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PADDLE_HIT_WATER
+  m_EditorClassIdentifier: 
+  Path: event:/PADDLE_HIT_WATER
+  Guid:
+    Data1: -896485994
+    Data2: 1291995073
+    Data3: -1983827525
+    Data4: -97687599
+  Banks:
+  - {fileID: 8232797536598487831}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6895058783658921626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/WATER_LAPPING_CLOSE
+  m_EditorClassIdentifier: 
+  Path: event:/WATER_LAPPING_CLOSE
+  Guid:
+    Data1: 737153697
+    Data2: 1322835266
+    Data3: -1456247165
+    Data4: -1174193275
+  Banks:
+  - {fileID: 8691873038910013581}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30000
+--- !u!114 &-3151233521523475858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/WATER_LAPPING_FAR
+  m_EditorClassIdentifier: 
+  Path: event:/WATER_LAPPING_FAR
+  Guid:
+    Data1: 2078917597
+    Data2: 1199349842
+    Data3: 1096122540
+    Data4: -632387882
+  Banks:
+  - {fileID: 8691873038910013581}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30000
+--- !u!114 &-1355093919156093705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CANOE_LAND_GROUND
+  m_EditorClassIdentifier: 
+  Path: event:/CANOE_LAND_GROUND
+  Guid:
+    Data1: -1223711378
+    Data2: 1131573452
+    Data3: -1121226872
+    Data4: 1320049284
+  Banks:
+  - {fileID: 1305020910568442910}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-929798053731178957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CANOE_LAND_WATER
+  m_EditorClassIdentifier: 
+  Path: event:/CANOE_LAND_WATER
+  Guid:
+    Data1: -1977164227
+    Data2: 1213160776
+    Data3: 1337321406
+    Data4: -747116936
+  Banks:
+  - {fileID: 1305020910568442910}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 6826307713226457768}
+  - {fileID: 8691873038910013581}
+  - {fileID: 1305020910568442910}
+  - {fileID: 152836769668970236}
+  - {fileID: 6459806294759836018}
+  - {fileID: 8232797536598487831}
+  EditorEvents:
+  - {fileID: 3250609050183649109}
+  - {fileID: 430864390665730982}
+  - {fileID: -6895058783658921626}
+  - {fileID: -3151233521523475858}
+  - {fileID: 4569767898971892887}
+  - {fileID: -929798053731178957}
+  - {fileID: -1355093919156093705}
+  - {fileID: 3140993265468659593}
+  - {fileID: -7193050363611869085}
+  - {fileID: 7256313222214429428}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 152836769668970236}
+  StringsBanks:
+  - {fileID: 6826307713226457768}
+  cacheTime: 638662526728172520
+  cacheVersion: 131620
+--- !u!114 &152836769668970236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMODProj/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638662526728162530
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &430864390665730982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BIRDSONG
+  m_EditorClassIdentifier: 
+  Path: event:/BIRDSONG
+  Guid:
+    Data1: 1557360478
+    Data2: 1214049916
+    Data3: -960486015
+    Data4: -238486181
+  Banks:
+  - {fileID: 8691873038910013581}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18000
+--- !u!114 &1305020910568442910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/CANOE.bank
+  m_EditorClassIdentifier: 
+  Path: FMODProj/Build/Desktop/CANOE.bank
+  Name: CANOE
+  StudioPath: bank:/CANOE
+  lastModified: 638662526727895794
+  FileSizes:
+  - Name: Desktop
+    Value: 67904
+  Exists: 1
+--- !u!114 &3140993265468659593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PADDLE_HIT_GROUND
+  m_EditorClassIdentifier: 
+  Path: event:/PADDLE_HIT_GROUND
+  Guid:
+    Data1: -1012499638
+    Data2: 1245760966
+    Data3: -1810482271
+    Data4: 1126465875
+  Banks:
+  - {fileID: 8232797536598487831}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3250609050183649109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC
+  Guid:
+    Data1: 1630256696
+    Data2: 1305130556
+    Data3: 1162398880
+    Data4: -690767148
+  Banks:
+  - {fileID: 6459806294759836018}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4569767898971892887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/WIND_LEAVES
+  m_EditorClassIdentifier: 
+  Path: event:/WIND_LEAVES
+  Guid:
+    Data1: -838138394
+    Data2: 1177779490
+    Data3: -704024918
+    Data4: -901142442
+  Banks:
+  - {fileID: 8691873038910013581}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 29017
+--- !u!114 &6459806294759836018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/MUSIC.bank
+  m_EditorClassIdentifier: 
+  Path: FMODProj/Build/Desktop/MUSIC.bank
+  Name: MUSIC
+  StudioPath: bank:/MUSIC
+  lastModified: 638662526728152517
+  FileSizes:
+  - Name: Desktop
+    Value: 4529152
+  Exists: 1
+--- !u!114 &6826307713226457768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMODProj/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638662526728162530
+  FileSizes:
+  - Name: Desktop
+    Value: 1372
+  Exists: 1
+--- !u!114 &7256313222214429428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PADDLE_SWITCHSIDE
+  m_EditorClassIdentifier: 
+  Path: event:/PADDLE_SWITCHSIDE
+  Guid:
+    Data1: 1550696649
+    Data2: 1131751858
+    Data3: -1780138582
+    Data4: 1747714251
+  Banks:
+  - {fileID: 8232797536598487831}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8232797536598487831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/PADDLE.bank
+  m_EditorClassIdentifier: 
+  Path: FMODProj/Build/Desktop/PADDLE.bank
+  Name: PADDLE
+  StudioPath: bank:/PADDLE
+  lastModified: 638662526728172520
+  FileSizes:
+  - Name: Desktop
+    Value: 170464
+  Exists: 1
+--- !u!114 &8691873038910013581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/AMBIENCES.bank
+  m_EditorClassIdentifier: 
+  Path: FMODProj/Build/Desktop/AMBIENCES.bank
+  Name: AMBIENCES
+  StudioPath: bank:/AMBIENCES
+  lastModified: 638662526727885790
+  FileSizes:
+  - Name: Desktop
+    Value: 1250368
+  Exists: 1
