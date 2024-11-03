@@ -66,6 +66,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9a5dd570bf44e3479aa1f5d3d702560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2061867623021450498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6057515521568397318}
+  - component: {fileID: 3877953379121988770}
+  m_Layer: 15
+  m_Name: CameraRotationTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6057515521568397318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061867623021450498}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6679148243940397086}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &3877953379121988770
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061867623021450498}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1001 &224884792529760687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -238,8 +297,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paddleDynamicSideOffset: 0.6
   paddleDynamicHeightOffset: 0.3
-  paddleForwardForceMulti: 70
-  paddleUpwardForceMulti: 50
+  paddleForwardForceMulti: 120
+  paddleUpwardForceMulti: 70
   flipCanoeForceMulti: 90
   canoeTransform: {fileID: 6679148243940397086}
   paddleContactTransform: {fileID: 822942559387217321}
@@ -343,6 +402,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c253659cfc8dc504382571dacd25f5dc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 329971116760290884}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c253659cfc8dc504382571dacd25f5dc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6057515521568397318}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c253659cfc8dc504382571dacd25f5dc, type: 3}
       insertIndex: -1
@@ -467,7 +529,7 @@ Rigidbody:
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0.1
-  m_AngularDrag: 10
+  m_AngularDrag: 5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
