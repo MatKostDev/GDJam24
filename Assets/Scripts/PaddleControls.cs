@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PaddleControls : MonoBehaviour
 {
@@ -34,9 +35,15 @@ public class PaddleControls : MonoBehaviour
     [SerializeField]
     GameObject paddleCollisionParticle;
 
+    [Header("Audio")]
+    [SerializeField]
+    UnityEvent paddleSwitchSide;
+
     float m_paddleStaticHeightOffset;
 
     Vector2 m_lastRelativeScreenPos;
+
+    int m_lastSideMulti = -1;
 
     void Start()
     {
@@ -58,6 +65,12 @@ public class PaddleControls : MonoBehaviour
 
         int sideMulti   = relativeScreenPos.x > 0f ? 1 : -1;
         int heightMulti = clickHeld ? -1 : 1;
+
+        if (m_lastSideMulti != sideMulti)
+        {
+            paddleSwitchSide?.Invoke();
+            m_lastSideMulti = sideMulti;
+        }
 
         var canoePos = canoeTransform.position;
 
