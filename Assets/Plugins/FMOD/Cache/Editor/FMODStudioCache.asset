@@ -170,7 +170,7 @@ MonoBehaviour:
   - {fileID: 152836769668970236}
   StringsBanks:
   - {fileID: 6826307713226457768}
-  cacheTime: 638662069817725266
+  cacheTime: 638662518817327529
   cacheVersion: 131620
 --- !u!114 &152836769668970236
 MonoBehaviour:
@@ -187,7 +187,7 @@ MonoBehaviour:
   Path: FMODProj/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638662068428293830
+  lastModified: 638662518817302460
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -234,7 +234,7 @@ MonoBehaviour:
   Path: FMODProj/Build/Desktop/CANOE.bank
   Name: CANOE
   StudioPath: bank:/CANOE
-  lastModified: 638662066099351759
+  lastModified: 638662518816934927
   FileSizes:
   - Name: Desktop
     Value: 67904
@@ -335,7 +335,7 @@ MonoBehaviour:
   Path: FMODProj/Build/Desktop/MUSIC.bank
   Name: MUSIC
   StudioPath: bank:/MUSIC
-  lastModified: 638662069817505089
+  lastModified: 638662518817290630
   FileSizes:
   - Name: Desktop
     Value: 4529152
@@ -355,7 +355,7 @@ MonoBehaviour:
   Path: FMODProj/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638662068428298837
+  lastModified: 638662518817312472
   FileSizes:
   - Name: Desktop
     Value: 1372
@@ -402,7 +402,7 @@ MonoBehaviour:
   Path: FMODProj/Build/Desktop/PADDLE.bank
   Name: PADDLE
   StudioPath: bank:/PADDLE
-  lastModified: 638662066098736228
+  lastModified: 638662518817327529
   FileSizes:
   - Name: Desktop
     Value: 170464
@@ -422,7 +422,7 @@ MonoBehaviour:
   Path: FMODProj/Build/Desktop/AMBIENCES.bank
   Name: AMBIENCES
   StudioPath: bank:/AMBIENCES
-  lastModified: 638662069817725266
+  lastModified: 638662518816924929
   FileSizes:
   - Name: Desktop
     Value: 1250368
