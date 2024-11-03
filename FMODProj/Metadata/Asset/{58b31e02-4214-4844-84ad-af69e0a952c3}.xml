@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{58b31e02-4214-4844-84ad-af69e0a952c3}">
+		<property name="assetPath">
+			<value>PADDLE/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{13f6abb4-f63e-4794-b3f0-6a1e2e1bbb32}</destination>
+		</relationship>
+	</object>
+</objects>

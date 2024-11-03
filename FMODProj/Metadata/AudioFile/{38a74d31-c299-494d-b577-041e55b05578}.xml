@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{38a74d31-c299-494d-b577-041e55b05578}">
+		<property name="assetPath">
+			<value>PADDLE/HIT WATER/GDJF24_JAMP_paddle_hit_water_3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.683125</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{13f6abb4-f63e-4794-b3f0-6a1e2e1bbb32}</destination>
+		</relationship>
+	</object>
+</objects>

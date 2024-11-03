@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f018a026-b1db-46ca-9a3c-620926f3c0de}">
+		<property name="assetPath">
+			<value>CANOE/GDJF24_JAMP_canoe_land_ground_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.43435416666666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{13f6abb4-f63e-4794-b3f0-6a1e2e1bbb32}</destination>
+		</relationship>
+	</object>
+</objects>
