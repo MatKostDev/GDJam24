@@ -39,6 +39,10 @@ public class PaddleControls : MonoBehaviour
     [SerializeField]
     GameObject paddleCollisionParticle;
 
+    [Header("UI")]
+    [SerializeField]
+    GameObject pauseMenu;
+
     [Header("Audio")]
     [SerializeField]
     UnityEvent paddleSwitchSide;
@@ -53,6 +57,8 @@ public class PaddleControls : MonoBehaviour
     
     Vector3    m_visualStartOffsetPos;
     Quaternion m_visualStartOffsetRot;
+
+    bool    m_isPaused = false;
 
     void Start()
     {
@@ -69,6 +75,7 @@ public class PaddleControls : MonoBehaviour
 
     void Update()
     {
+        bool    pause = Input.GetKeyDown(KeyCode.Escape);
         bool    flipCanoe  = Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.Space);
         bool    clickFrame = Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1);
         bool    clickHeld  = Input.GetMouseButton(0)     || Input.GetMouseButton(1);
@@ -143,6 +150,14 @@ public class PaddleControls : MonoBehaviour
             Vector3 forceOrigin = canoePos + canoeTransform.right * transform.localPosition.x;
 
             canoeTransform.GetComponent<Rigidbody>().AddForceAtPosition(flipForce, forceOrigin);
+        }
+
+        if (pause)
+        {
+
+            m_isPaused = !m_isPaused;
+            pauseMenu.SetActive(m_isPaused);
+
         }
 
         m_lastRelativeScreenPos = relativeScreenPos;
