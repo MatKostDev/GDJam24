@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Events;
 
 public class PaddleControls : MonoBehaviour
 {
@@ -31,22 +30,32 @@ public class PaddleControls : MonoBehaviour
     [SerializeField]
     PaddleCollision paddleCollision;
 
+    [Header("Paddle Visuals")]
+    [SerializeField]
+    Transform paddleVisualTransform;
+
     [Header("Effects")]
     [SerializeField]
     GameObject paddleCollisionParticle;
-
-    [Header("Audio")]
-    [SerializeField]
-    UnityEvent paddleSwitchSide;
 
     float m_paddleStaticHeightOffset;
 
     Vector2 m_lastRelativeScreenPos;
 
-    int m_lastSideMulti = -1;
+    Vector3    m_visualTargetPos;
+    Quaternion m_visualTargetRot;
+    
+    Vector3    m_visualStartOffsetPos;
+    Quaternion m_visualStartOffsetRot;
 
     void Start()
     {
+        m_visualTargetPos = paddleVisualTransform.localPosition;
+        m_visualTargetRot = paddleVisualTransform.localRotation;
+
+        m_visualStartOffsetPos = paddleVisualTransform.localPosition;
+        m_visualStartOffsetRot = paddleVisualTransform.localRotation;
+
         m_paddleStaticHeightOffset = transform.localPosition.y;
 
         m_lastRelativeScreenPos = new Vector2(Input.mousePosition.x / Screen.width, Input.mousePosition.y / Screen.height);
@@ -66,26 +75,34 @@ public class PaddleControls : MonoBehaviour
         int sideMulti   = relativeScreenPos.x > 0f ? 1 : -1;
         int heightMulti = clickHeld ? -1 : 1;
 
-        if (m_lastSideMulti != sideMulti)
-        {
-            paddleSwitchSide?.Invoke();
-            m_lastSideMulti = sideMulti;
-        }
-
         var canoePos = canoeTransform.position;
 
-        Vector3 newPos = transform.position;
-        newPos.x = paddleDynamicSideOffset * sideMulti;
-        transform.position = newPos;
+        Vector3 newPhysicsPos = transform.position;
+        newPhysicsPos.x = paddleDynamicSideOffset * sideMulti;
+        transform.position = newPhysicsPos;
 
-        newPos = canoePos;
-        newPos += canoeTransform.right   * (relativeScreenPos.x * 0.2f + (paddleDynamicSideOffset * sideMulti));
-        newPos += canoeTransform.up      * (paddleDynamicHeightOffset * heightMulti + m_paddleStaticHeightOffset);
-        newPos += canoeTransform.forward * relativeScreenPos.y * 1.2f;
+        newPhysicsPos = canoePos;
+        newPhysicsPos += canoeTransform.right   * (relativeScreenPos.x * 0.2f + (paddleDynamicSideOffset * sideMulti));
+        newPhysicsPos += canoeTransform.up      * (paddleDynamicHeightOffset * heightMulti + m_paddleStaticHeightOffset);
+        newPhysicsPos += canoeTransform.forward * relativeScreenPos.y * 1.2f;
 
         float paddleSpeed = m_lastRelativeScreenPos.y - relativeScreenPos.y;
 
-        transform.position = newPos;
+        transform.position = newPhysicsPos;
+
+        Vector3 newVisualTargetPos = m_visualStartOffsetPos;
+        newVisualTargetPos.x *= sideMulti;
+        newVisualTargetPos.x += relativeScreenPos.x * 0.25f;
+        newVisualTargetPos.y += 0.25f * heightMulti;
+        newVisualTargetPos.z += relativeScreenPos.y * 0.4f;
+
+        paddleVisualTransform.localPosition = Vector3.Lerp(paddleVisualTransform.localPosition, newVisualTargetPos, 20f * Time.deltaTime);
+
+        Vector3 newVisualTargetEulers = m_visualStartOffsetRot.eulerAngles;
+        newVisualTargetEulers.x += sideMulti == -1 ? 90f : 0f;
+        newVisualTargetEulers.y += -relativeScreenPos.y * 50f * sideMulti;
+
+        paddleVisualTransform.localRotation = Quaternion.Slerp(paddleVisualTransform.localRotation, Quaternion.Euler(newVisualTargetEulers), 20f * Time.deltaTime);
 
         if (paddleCollision.IsCollision)
         {
