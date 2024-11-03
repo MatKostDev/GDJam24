@@ -26,6 +26,10 @@ public class PaddleControls : MonoBehaviour
     [SerializeField]
     Transform paddleContactTransform;
 
+    [Header("Paddle Collision")]
+    [SerializeField]
+    PaddleCollision paddleCollision;
+
     float m_paddleStaticHeightOffset;
 
     Vector2 m_lastRelativeScreenPos;
@@ -66,20 +70,24 @@ public class PaddleControls : MonoBehaviour
 
         transform.position = newPos;
 
-        if (clickHeld)
+        if (paddleCollision.IsCollision)
         {
-            Vector3 forwardForce = paddleForwardForceMulti * paddleSpeed * canoeTransform.forward;
+            if (clickHeld)
+            {
+                Vector3 forwardForce = paddleForwardForceMulti * paddleSpeed * canoeTransform.forward;
 
-            canoeTransform.GetComponent<Rigidbody>().AddForceAtPosition(forwardForce, paddleContactTransform.position);
+                canoeTransform.GetComponent<Rigidbody>().AddForceAtPosition(forwardForce, paddleContactTransform.position);
+            }
+            if (clickFrame)
+            {
+                Vector3 upwardForce = canoeTransform.up * paddleUpwardForceMulti;
+
+                Vector3 forceOrigin = canoePos + canoeTransform.forward * transform.localPosition.z;
+
+                canoeTransform.GetComponent<Rigidbody>().AddForceAtPosition(upwardForce, forceOrigin);
+            }
         }
-        if (clickFrame)
-        {
-            Vector3 upwardForce = canoeTransform.up * paddleUpwardForceMulti;
 
-            Vector3 forceOrigin = canoePos + canoeTransform.forward * transform.localPosition.z;
-
-            canoeTransform.GetComponent<Rigidbody>().AddForceAtPosition(upwardForce, forceOrigin);
-        }
         if (flipCanoe)
         {
             Vector3 flipForce = Vector3.up * flipCanoeForceMulti;
